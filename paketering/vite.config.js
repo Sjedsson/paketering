@@ -7,6 +7,6 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
-    setupFiles: './src/setupTests.js'  // Optional, if you need global setup for testing
+    setupFiles: './src/setupTests.js'  // Här slänger vi in setupTests.js, vår egen backstage manager som förbereder allt så vi slipper trassla med imports i varje testfil. A hero without a cape!
   }
 })
